@@ -82,8 +82,8 @@ def sliding_window(img, stepSize, windowSize):
     n_steps_y = int( math.ceil( img.shape[0] / float(stepSize) ) )
     n_steps_x = int( math.ceil( img.shape[1] / float(stepSize) ) )
 
-    for y in xrange(n_steps_y):
-        for x in xrange(n_steps_x):
+    for y in range(n_steps_y):
+        for x in range(n_steps_x):
             posX = x * stepSize
             posY = y * stepSize
             posToX = posX + windowSize[0]
